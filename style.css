@@ -60,6 +60,10 @@ body {
   height: 100%;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 h1 {
   font-family: 'Sao', sans-serif;
 }
@@ -77,6 +81,7 @@ fieldset {
   background-color: #ed4d25;
   color: #f0e6d8;
   overflow: hidden;
+  position: relative;
 }
 
 .pablos {
