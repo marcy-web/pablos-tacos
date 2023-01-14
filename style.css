@@ -1,0 +1,723 @@
+/*######################## Custom Fonts #######################*/
+
+@font-face {
+  font-family: sao;
+  src: url(Fonts/SaoTorpes.otf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500;800&display=swap');
+
+@font-face {
+  font-family: Hamburg;
+  src: url('Fonts/HamburgHand-Regular.otf');
+}
+
+@font-face {
+  font-family: Cartograph;
+  src: url('Fonts/CartographCF-ExtraLightItalic.woff2');
+}
+
+/*######################## Utility Classes ####################*/
+
+.bold {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.flex {
+  display: flex;
+}
+
+.large {
+  font-size: 1.5rem;
+}
+
+.z-one {
+  z-index: 1;
+}
+
+.relative {
+  position: relative;
+}
+
+/*######################## Base Styles ########################*/
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  background-color: #f0e6d8;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 500;
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  font-family: 'Sao', sans-serif;
+}
+
+fieldset {
+  height: 90%;
+}
+
+/*######################## Section One ########################*/
+
+.section-one {
+  width: 100%;
+  height: 100vh;
+  max-height: 100vh;
+  background-color: #ed4d25;
+  color: #f0e6d8;
+  overflow: hidden;
+}
+
+.pablos {
+  text-align: center;
+  padding-top: 4vh;
+  font-size: 4rem;
+  color: #2d2a26;
+}
+
+nav {
+  text-align: center;
+  margin-top: 2vh;
+}
+
+nav a {
+  color: #f0e6d8;
+  text-decoration: none;
+  margin-right: 2vw;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.splash {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 7vh;
+}
+
+@media (max-width: 1000px) {
+  .splash {
+    width: 80%;
+  }
+}
+
+.splash h1 {
+  font-size: 6rem;
+  text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .splash h1 {
+    font-size: 4.5rem;
+  }
+}
+
+.splash p {
+  font-size: 1.5rem;
+}
+
+.splash button {
+  color: #f0e6d8;
+  background-color: #2d2a26;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 1vw;
+  display: block;
+  margin: 0 auto;
+  margin-top: 3vh;
+  border-radius: 3px;
+  box-shadow: 0.5vw 0.5vw #f0e6d8;
+}
+
+.banner {
+  width: 120%;
+  height: 7vh;
+  background-color: #e5d4d3;
+  color: #2d2a26;
+  text-transform: uppercase;
+  font-family: 'Sao', sans-serif;
+  font-size: 4rem;
+  white-space: nowrap;
+  margin-top: 20vh;
+  margin-left: -3%;
+  transform: rotate(5deg);
+  z-index: 9;
+}
+
+@media (max-width: 1000px) {
+  .banner {
+    margin-top: 40vh;
+  }
+}
+
+.banner-br {
+  width: 200%;
+  height: 7vh;
+  background-color: #2d2a26;
+  color: #ed4d25;
+  text-transform: uppercase;
+  font-family: 'Sao', sans-serif;
+  font-size: 4rem;
+  white-space: nowrap;
+  margin-left: -30vw;
+  margin-top: -10vh;
+  transform: rotate(-7deg);
+  z-index: 9;
+}
+
+.banner p,
+.banner-br p {
+  padding-top: 1.5vh;
+}
+
+.splash-girl {
+  height: 80%;
+  width: auto;
+  position: absolute;
+  bottom: 0;
+}
+
+@media (max-width: 1000px) {
+  .splash-girl {
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+}
+
+.splash-sun {
+  width: 15vw;
+  height: 15vw;
+  background-image: url('Images/Argentina-Sun.png');
+  background-size: cover;
+  position: absolute;
+  right: 0;
+  margin-right: 3vw;
+  margin-top: 5vw;
+}
+
+@media (max-width: 1000px) {
+  .splash-sun {
+    display: none;
+  }
+}
+
+/*######################## Section Two ########################*/
+
+.section-two {
+  color: #2d2a26;
+  margin-top: 10vh;
+}
+
+.two-blurb {
+  width: 100%;
+  text-align: center;
+}
+
+.two-blurb h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: #ed4d25;
+}
+
+.cards {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  border: 3px solid #2d2a26;
+  border-radius: 3px;
+  width: 30vw;
+  height: 28vw;
+  padding: 1%;
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 3px;
+}
+
+.delivery-img {
+  width: 100%;
+  height: 78%;
+  background-image: url('Images/delivery-card.jpg');
+  background-size: cover;
+  border-radius: 3px;
+}
+
+.ingredients-img {
+  width: 100%;
+  height: 78%;
+  background-image: url('Images/ingredients-card.webp');
+  background-size: cover;
+  border-radius: 3px;
+}
+
+.homemade-img {
+  width: 100%;
+  height: 78%;
+  background-image: url('Images/homemade-card.jpg');
+  background-size: cover;
+  border-radius: 3px;
+}
+
+.card .bold {
+  color: #ed4d25;
+  font-weight: 800;
+  margin-top: 0.5vh;
+}
+
+.divider {
+  width: 100%;
+  height: 10vh;
+  background: repeating-conic-gradient(#ed4d25 0% 25%, transparent 0% 50%) 50% /
+    60px 60px;
+}
+
+.menu {
+  width: 90%;
+  height: 70vh;
+  border: 3px solid #ed4d25;
+  border-radius: 3px;
+  margin: 0 auto;
+  display: flex;
+  font-size: 1.5rem;
+}
+
+.menu-left {
+  width: 40%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.menu-left-chicken {
+  background-image: url('Images/chicken-silhouette.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.menu-left-cow {
+  background-image: url('Images/cow-silhouette.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.menu-left-pig {
+  background-image: url('Images/pig-silhouette.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.menu-left-shrimp {
+  background-image: url('Images/shrimp-silhouette.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.menu-right {
+  height: 100%;
+  width: 60%;
+  padding: 2vw;
+}
+
+.taco-row {
+  display: flex;
+  height: 30%;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.taco-square {
+  width: 30%;
+  height: 100%;
+  border: 3px solid #2d2a26;
+  border-radius: 3px;
+  padding: 0.4vw;
+}
+
+.taco-square .bold {
+  color: #ed4d25;
+  font-family: 'Sao', sans-serif;
+}
+
+.taco-space {
+  height: 0.5vh;
+}
+
+.sides-square section {
+  border: 3px solid #2d2a26;
+  border-radius: 3px;
+}
+
+.file-marker > div {
+  padding: 0 3px;
+  height: 10vh;
+  margin-top: -0.8em;
+}
+
+.file-marker-two > div {
+  padding: 0 3px;
+  height: 14vh;
+  margin-top: -0.8em;
+}
+
+.box-title {
+  background: #f0e6d8 none repeat scroll 0 0;
+  display: inline-block;
+  padding: 0 2px;
+  font-weight: bold;
+  color: #ed4d25;
+  font-family: 'Sao', sans-serif;
+  font-size: 2rem;
+}
+
+.sides {
+  font-weight: bold;
+  color: #2d2a26;
+  font-family: 'Sao', sans-serif;
+  font-size: 3rem;
+  margin-top: 0.5vh;
+}
+
+/*######################## Section Three ######################*/
+
+.reviews {
+  width: 90%;
+  height: 23.5vh;
+  margin: 0 auto;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.review-card {
+  border: 3px solid #2d2a26;
+  border-radius: 3px;
+  padding: 0.4vw;
+  width: 22%;
+  height: 100%;
+}
+
+.stars {
+  display: flex;
+  width: 100%;
+  height: 20%;
+  margin-bottom: 1vw;
+}
+
+.stars img {
+  max-height: 100%;
+  margin-right: 0.4vw;
+}
+
+.reviewer-row {
+  display: flex;
+  align-items: center;
+}
+
+.reviewer-row p {
+  margin-left: 1vw;
+  font-weight: bold;
+}
+
+.reviewer {
+  width: 5vw;
+  height: 5vw;
+  border-radius: 100%;
+  background-color: #2d2a26;
+}
+
+.who-is-that {
+  width: 5vw;
+  height: 5vw;
+  border-radius: 100%;
+  background-image: url('Images/97912552.png');
+  background-size: cover;
+}
+
+/*######################## Section Four #######################*/
+
+/* Form Functionality */
+.msf_hide {
+  display: none;
+}
+.msf_show {
+  display: block;
+}
+.msf_bullet_o {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.msf_bullet_o > div {
+  height: 15px;
+  width: 15px;
+  margin: 20px 10px;
+  border-radius: 100px;
+  z-index: 2;
+}
+.msf_bullet {
+  background-color: lightgrey;
+}
+.msf_bullet_active {
+  background-color: darkgrey !important;
+}
+
+/* Form Aesthetics */
+.form-wrapper {
+  width: 90%;
+  height: 90vh;
+  margin: 0 auto;
+  border: 3px solid #2d2a26;
+  border-radius: 3px;
+  padding: 2vw 4vw 2vw 4vw;
+  font-size: 1.5rem;
+}
+
+.menu-field {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(12, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.form-menu-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 3px solid #2d2a26;
+}
+
+.form-menu-row div {
+  width: 30%;
+}
+
+.plus {
+  border: 3px solid #2d2a26;
+  background-color: transparent;
+  font-size: 2rem;
+  font-weight: bold;
+  width: 2vw;
+  height: 2vw;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.item-quantity {
+  font-size: 1.5rem;
+  margin: 0 1vw 0 1vw;
+  width: 2vw;
+  background-color: transparent;
+  border: 3px solid #2d2a26;
+  text-align: center;
+}
+
+/* replace w/ menu-img class & cow, pig, etc for individual images*/
+
+.menu-chicken {
+  width: 100px;
+  height: 5vh;
+  background-image: url('Images/chicken.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.menu-pig {
+  width: 100px;
+  height: 5vh;
+  background-image: url('Images/pig.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.menu-cow {
+  width: 100px;
+  height: 5vh;
+  background-image: url('Images/cow.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.menu-shrimp {
+  width: 100px;
+  height: 5vh;
+  background-image: url('Images/shrimp.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.menu-salsa {
+  width: 100px;
+  height: 5vh;
+  background-image: url('Images/salsa.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.menu-beans {
+  width: 100px;
+  height: 5vh;
+  background-image: url('Images/beans.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.menu-pepper {
+  width: 100px;
+  height: 5vh;
+  background-image: url('Images/pepper.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.menu-cream {
+  width: 100px;
+  height: 5vh;
+  background-image: url('Images/cream.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.free {
+  color: #ed4d25;
+  font-weight: bold;
+  font-family: 'Sao', sans-serif;
+  font-size: 2.2rem;
+}
+
+.total {
+  font-weight: bold;
+  text-align: right;
+  width: 100%;
+  margin-right: 2vw;
+  margin-top: 2vw;
+  display: flex;
+  align-items: center;
+}
+
+.checkout {
+  color: #f0e6d8;
+  background-color: #2d2a26;
+  font-size: 2.2rem;
+  font-weight: 600;
+  padding: 0.5vw;
+  border-radius: 3px;
+  margin-left: 2vw;
+  box-shadow: 0.5vw 0.5vw #ed4d25;
+}
+
+.filler {
+  flex-grow: 1;
+}
+
+/*######################## Footer ######################*/
+
+footer {
+  background-color: #2d2a26;
+  width: 100%;
+  height: 40vh;
+  padding: 5vw;
+  color: #ed4d25;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer h1 {
+  font-size: 6rem;
+  font-family: 'Sao', sans-serif;
+}
+
+footer p {
+  font-size: 1.5rem;
+}
+
+/*######################## Plug ######################*/
+
+.plug {
+  width: 100%;
+  height: 7vh;
+  background-image: url(data:image/png;base64,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);
+  background-color: #71a089;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plug h1 {
+  font-size: 3rem;
+  font-family: 'Hamburg', sans-serif;
+  color: #004640;
+}
+
+.plug h1 span {
+  font-family: 'Cartograph', serif;
+  color: #ffecb1;
+  display: inline-block;
+}
+
+.plug h1 span::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 3px;
+  background: #ffecb1;
+  transition: width 0.3s;
+}
+
+.plug h1 span:hover {
+  cursor: pointer;
+}
+
+.plug h1 span:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+}
